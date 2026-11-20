@@ -1,0 +1,14 @@
+{
+  "name": "OP3000",
+  "manufacturer": "Stampman3000",
+  "uid": "OPAR",
+  "version": "1.0.0",
+  "kind": "instrument",
+  "category": "Synth",
+  "numInputs": 0,
+  "numOutputs": 2,
+  "description": "OP3000 — Dual-chip Yamaha YM2151 (OPM) + YM2612 (OPN2) style hybrid FM arcade synthesizer with SN76489 PSG sub-chip, per-voice ZDF-SVF hybrid filter, 80s chorus, and stereo delay.",
+  "file32": "VST/op3000-arm32.so",
+  "file64": "VST/op3000-arm64.so",
+  "license": "MIT"
+}

@@ -1,0 +1,1043 @@
+{
+  "page1": {
+    "knobs": [
+      {
+        "param": 1,
+        "id": "chip_mode",
+        "cx": 109,
+        "cy": 258,
+        "w": 66,
+        "h": 66,
+        "strip": "knob_op3_teal_3way.png",
+        "frames": 3,
+        "bipolar": false
+      },
+      {
+        "param": 2,
+        "id": "alg",
+        "cx": 257,
+        "cy": 258,
+        "w": 66,
+        "h": 66,
+        "strip": "knob_op3_gold_8way.png",
+        "frames": 8,
+        "bipolar": false
+      },
+      {
+        "param": 3,
+        "id": "feedback",
+        "cx": 109,
+        "cy": 492,
+        "w": 66,
+        "h": 66,
+        "strip": "knob_op3_gold_8way.png",
+        "frames": 8,
+        "bipolar": false
+      },
+      {
+        "param": 4,
+        "id": "voice_mode",
+        "cx": 257,
+        "cy": 492,
+        "w": 66,
+        "h": 66,
+        "strip": "knob_op3_teal_3way.png",
+        "frames": 3,
+        "bipolar": false
+      },
+      {
+        "param": 5,
+        "id": "fm_bite",
+        "cx": 416,
+        "cy": 258,
+        "w": 76,
+        "h": 76,
+        "strip": "knob_op3_red_hero.png",
+        "frames": 65,
+        "bipolar": true
+      },
+      {
+        "param": 10,
+        "id": "lfo_speed",
+        "cx": 565,
+        "cy": 258,
+        "w": 66,
+        "h": 66,
+        "strip": "knob_op3_silver.png",
+        "frames": 65,
+        "bipolar": false
+      },
+      {
+        "param": 11,
+        "id": "lfo_pm",
+        "cx": 714,
+        "cy": 258,
+        "w": 66,
+        "h": 66,
+        "strip": "knob_op3_silver.png",
+        "frames": 65,
+        "bipolar": false
+      },
+      {
+        "param": 12,
+        "id": "lfo_am",
+        "cx": 863,
+        "cy": 258,
+        "w": 66,
+        "h": 66,
+        "strip": "knob_op3_silver.png",
+        "frames": 65,
+        "bipolar": false
+      },
+      {
+        "param": 13,
+        "id": "psg_mix",
+        "cx": 1023,
+        "cy": 258,
+        "w": 66,
+        "h": 66,
+        "strip": "knob_op3_teal_pot.png",
+        "frames": 65,
+        "bipolar": false
+      },
+      {
+        "param": 14,
+        "id": "pcb_tone",
+        "cx": 1171,
+        "cy": 258,
+        "w": 66,
+        "h": 66,
+        "strip": "knob_op3_gold_3way.png",
+        "frames": 3,
+        "bipolar": false
+      },
+      {
+        "param": 6,
+        "id": "macro_att",
+        "cx": 416,
+        "cy": 472,
+        "w": 44,
+        "h": 132,
+        "strip": "fader_op3_red.png",
+        "frames": 65,
+        "bipolar": true
+      },
+      {
+        "param": 7,
+        "id": "macro_dec",
+        "cx": 565,
+        "cy": 472,
+        "w": 44,
+        "h": 132,
+        "strip": "fader_op3_gold.png",
+        "frames": 65,
+        "bipolar": true
+      },
+      {
+        "param": 8,
+        "id": "macro_rel",
+        "cx": 714,
+        "cy": 472,
+        "w": 44,
+        "h": 132,
+        "strip": "fader_op3_cream.png",
+        "frames": 65,
+        "bipolar": true
+      },
+      {
+        "param": 9,
+        "id": "detune",
+        "cx": 863,
+        "cy": 472,
+        "w": 44,
+        "h": 132,
+        "strip": "fader_op3_teal.png",
+        "frames": 65,
+        "bipolar": false
+      },
+      {
+        "param": 15,
+        "id": "chorus_mix",
+        "cx": 1023,
+        "cy": 472,
+        "w": 44,
+        "h": 132,
+        "strip": "fader_op3_teal.png",
+        "frames": 65,
+        "bipolar": false
+      },
+      {
+        "param": 16,
+        "id": "delay_mix",
+        "cx": 1171,
+        "cy": 472,
+        "w": 44,
+        "h": 132,
+        "strip": "fader_op3_red.png",
+        "frames": 65,
+        "bipolar": false
+      }
+    ],
+    "strips": [
+      {
+        "param": 2,
+        "id": "alg_crt",
+        "cx": 620,
+        "cy": 67,
+        "w": 476,
+        "h": 90,
+        "strip": "alg_crt_8.png",
+        "frames": 8
+      },
+      {
+        "param": 68,
+        "id": "meter_l",
+        "cx": 1158,
+        "cy": 60,
+        "w": 22,
+        "h": 70,
+        "strip": "meter_vfd_8.png",
+        "frames": 8
+      },
+      {
+        "param": 69,
+        "id": "meter_r",
+        "cx": 1188,
+        "cy": 60,
+        "w": 22,
+        "h": 70,
+        "strip": "meter_vfd_8.png",
+        "frames": 8
+      }
+    ],
+    "labels": [
+      {
+        "param": 70,
+        "id": "stat_info",
+        "x": 52,
+        "y": 80,
+        "w": 296,
+        "h": 33,
+        "size": 17,
+        "color": "ff5cf2cc"
+      },
+      {
+        "param": 71,
+        "id": "stat_chip",
+        "x": 894,
+        "y": 50,
+        "w": 230,
+        "h": 44,
+        "size": 18,
+        "color": "fffcc244"
+      }
+    ]
+  },
+  "page2": {
+    "knobs": [
+      {
+        "param": 17,
+        "id": "op1_mul",
+        "cx": 112,
+        "cy": 170,
+        "w": 54,
+        "h": 54,
+        "strip": "knob_op_gold_16way.png",
+        "frames": 16,
+        "bipolar": false
+      },
+      {
+        "param": 20,
+        "id": "op1_lvl",
+        "cx": 253,
+        "cy": 170,
+        "w": 54,
+        "h": 54,
+        "strip": "knob_op_gold_pot.png",
+        "frames": 65,
+        "bipolar": false
+      },
+      {
+        "param": 18,
+        "id": "op1_dt1",
+        "cx": 112,
+        "cy": 287,
+        "w": 54,
+        "h": 54,
+        "strip": "knob_op_7way.png",
+        "frames": 7,
+        "bipolar": false
+      },
+      {
+        "param": 19,
+        "id": "op1_dt2",
+        "cx": 253,
+        "cy": 287,
+        "w": 54,
+        "h": 54,
+        "strip": "knob_op_4way.png",
+        "frames": 4,
+        "bipolar": false
+      },
+      {
+        "param": 21,
+        "id": "op1_ar",
+        "cx": 112,
+        "cy": 404,
+        "w": 54,
+        "h": 54,
+        "strip": "knob_op_silver_pot.png",
+        "frames": 65,
+        "bipolar": false
+      },
+      {
+        "param": 22,
+        "id": "op1_d1r",
+        "cx": 253,
+        "cy": 404,
+        "w": 54,
+        "h": 54,
+        "strip": "knob_op_silver_pot.png",
+        "frames": 65,
+        "bipolar": false
+      },
+      {
+        "param": 23,
+        "id": "op1_sl",
+        "cx": 112,
+        "cy": 521,
+        "w": 54,
+        "h": 54,
+        "strip": "knob_op_silver_pot.png",
+        "frames": 65,
+        "bipolar": false
+      },
+      {
+        "param": 24,
+        "id": "op1_rr",
+        "cx": 253,
+        "cy": 521,
+        "w": 54,
+        "h": 54,
+        "strip": "knob_op_silver_pot.png",
+        "frames": 65,
+        "bipolar": false
+      },
+      {
+        "param": 25,
+        "id": "op2_mul",
+        "cx": 417,
+        "cy": 170,
+        "w": 54,
+        "h": 54,
+        "strip": "knob_op_teal_16way.png",
+        "frames": 16,
+        "bipolar": false
+      },
+      {
+        "param": 28,
+        "id": "op2_lvl",
+        "cx": 558,
+        "cy": 170,
+        "w": 54,
+        "h": 54,
+        "strip": "knob_op_teal_pot.png",
+        "frames": 65,
+        "bipolar": false
+      },
+      {
+        "param": 26,
+        "id": "op2_dt1",
+        "cx": 417,
+        "cy": 287,
+        "w": 54,
+        "h": 54,
+        "strip": "knob_op_7way.png",
+        "frames": 7,
+        "bipolar": false
+      },
+      {
+        "param": 27,
+        "id": "op2_dt2",
+        "cx": 558,
+        "cy": 287,
+        "w": 54,
+        "h": 54,
+        "strip": "knob_op_4way.png",
+        "frames": 4,
+        "bipolar": false
+      },
+      {
+        "param": 29,
+        "id": "op2_ar",
+        "cx": 417,
+        "cy": 404,
+        "w": 54,
+        "h": 54,
+        "strip": "knob_op_silver_pot.png",
+        "frames": 65,
+        "bipolar": false
+      },
+      {
+        "param": 30,
+        "id": "op2_d1r",
+        "cx": 558,
+        "cy": 404,
+        "w": 54,
+        "h": 54,
+        "strip": "knob_op_silver_pot.png",
+        "frames": 65,
+        "bipolar": false
+      },
+      {
+        "param": 31,
+        "id": "op2_sl",
+        "cx": 417,
+        "cy": 521,
+        "w": 54,
+        "h": 54,
+        "strip": "knob_op_silver_pot.png",
+        "frames": 65,
+        "bipolar": false
+      },
+      {
+        "param": 32,
+        "id": "op2_rr",
+        "cx": 558,
+        "cy": 521,
+        "w": 54,
+        "h": 54,
+        "strip": "knob_op_silver_pot.png",
+        "frames": 65,
+        "bipolar": false
+      },
+      {
+        "param": 33,
+        "id": "op3_mul",
+        "cx": 722,
+        "cy": 170,
+        "w": 54,
+        "h": 54,
+        "strip": "knob_op_silver_16way.png",
+        "frames": 16,
+        "bipolar": false
+      },
+      {
+        "param": 36,
+        "id": "op3_lvl",
+        "cx": 863,
+        "cy": 170,
+        "w": 54,
+        "h": 54,
+        "strip": "knob_op_silver_pot.png",
+        "frames": 65,
+        "bipolar": false
+      },
+      {
+        "param": 34,
+        "id": "op3_dt1",
+        "cx": 722,
+        "cy": 287,
+        "w": 54,
+        "h": 54,
+        "strip": "knob_op_7way.png",
+        "frames": 7,
+        "bipolar": false
+      },
+      {
+        "param": 35,
+        "id": "op3_dt2",
+        "cx": 863,
+        "cy": 287,
+        "w": 54,
+        "h": 54,
+        "strip": "knob_op_4way.png",
+        "frames": 4,
+        "bipolar": false
+      },
+      {
+        "param": 37,
+        "id": "op3_ar",
+        "cx": 722,
+        "cy": 404,
+        "w": 54,
+        "h": 54,
+        "strip": "knob_op_silver_pot.png",
+        "frames": 65,
+        "bipolar": false
+      },
+      {
+        "param": 38,
+        "id": "op3_d1r",
+        "cx": 863,
+        "cy": 404,
+        "w": 54,
+        "h": 54,
+        "strip": "knob_op_silver_pot.png",
+        "frames": 65,
+        "bipolar": false
+      },
+      {
+        "param": 39,
+        "id": "op3_sl",
+        "cx": 722,
+        "cy": 521,
+        "w": 54,
+        "h": 54,
+        "strip": "knob_op_silver_pot.png",
+        "frames": 65,
+        "bipolar": false
+      },
+      {
+        "param": 40,
+        "id": "op3_rr",
+        "cx": 863,
+        "cy": 521,
+        "w": 54,
+        "h": 54,
+        "strip": "knob_op_silver_pot.png",
+        "frames": 65,
+        "bipolar": false
+      },
+      {
+        "param": 41,
+        "id": "op4_mul",
+        "cx": 1027,
+        "cy": 170,
+        "w": 54,
+        "h": 54,
+        "strip": "knob_op_red_16way.png",
+        "frames": 16,
+        "bipolar": false
+      },
+      {
+        "param": 44,
+        "id": "op4_lvl",
+        "cx": 1168,
+        "cy": 170,
+        "w": 54,
+        "h": 54,
+        "strip": "knob_op_red_pot.png",
+        "frames": 65,
+        "bipolar": false
+      },
+      {
+        "param": 42,
+        "id": "op4_dt1",
+        "cx": 1027,
+        "cy": 287,
+        "w": 54,
+        "h": 54,
+        "strip": "knob_op_7way.png",
+        "frames": 7,
+        "bipolar": false
+      },
+      {
+        "param": 43,
+        "id": "op4_dt2",
+        "cx": 1168,
+        "cy": 287,
+        "w": 54,
+        "h": 54,
+        "strip": "knob_op_4way.png",
+        "frames": 4,
+        "bipolar": false
+      },
+      {
+        "param": 45,
+        "id": "op4_ar",
+        "cx": 1027,
+        "cy": 404,
+        "w": 54,
+        "h": 54,
+        "strip": "knob_op_silver_pot.png",
+        "frames": 65,
+        "bipolar": false
+      },
+      {
+        "param": 46,
+        "id": "op4_d1r",
+        "cx": 1168,
+        "cy": 404,
+        "w": 54,
+        "h": 54,
+        "strip": "knob_op_silver_pot.png",
+        "frames": 65,
+        "bipolar": false
+      },
+      {
+        "param": 47,
+        "id": "op4_sl",
+        "cx": 1027,
+        "cy": 521,
+        "w": 54,
+        "h": 54,
+        "strip": "knob_op_silver_pot.png",
+        "frames": 65,
+        "bipolar": false
+      },
+      {
+        "param": 48,
+        "id": "op4_rr",
+        "cx": 1168,
+        "cy": 521,
+        "w": 54,
+        "h": 54,
+        "strip": "knob_op_silver_pot.png",
+        "frames": 65,
+        "bipolar": false
+      }
+    ],
+    "strips": [
+      {
+        "param": 2,
+        "id": "alg_crt_p2",
+        "cx": 679,
+        "cy": 46,
+        "w": 348,
+        "h": 48,
+        "strip": "alg_crt_mini_8.png",
+        "frames": 8
+      }
+    ],
+    "labels": [
+      {
+        "param": 71,
+        "id": "stat_chip_p2",
+        "x": 888,
+        "y": 24,
+        "w": 330,
+        "h": 44,
+        "size": 18,
+        "color": "fffcc244"
+      }
+    ]
+  },
+  "page3": {
+    "knobs": [
+      {
+        "param": 53,
+        "id": "chip_blend",
+        "cx": 110,
+        "cy": 246,
+        "w": 66,
+        "h": 66,
+        "strip": "knob_op3_silver.png",
+        "frames": 65,
+        "bipolar": true
+      },
+      {
+        "param": 54,
+        "id": "opn2_oct",
+        "cx": 257,
+        "cy": 246,
+        "w": 66,
+        "h": 66,
+        "strip": "knob_op3_teal_3way.png",
+        "frames": 3,
+        "bipolar": false
+      },
+      {
+        "param": 55,
+        "id": "opn2_det",
+        "cx": 404,
+        "cy": 246,
+        "w": 66,
+        "h": 66,
+        "strip": "knob_op3_silver.png",
+        "frames": 65,
+        "bipolar": true
+      },
+      {
+        "param": 57,
+        "id": "ssg_eg",
+        "cx": 257,
+        "cy": 486,
+        "w": 66,
+        "h": 66,
+        "strip": "knob_op3_gold_4way.png",
+        "frames": 4,
+        "bipolar": false
+      },
+      {
+        "param": 59,
+        "id": "psg_wave",
+        "cx": 569,
+        "cy": 246,
+        "w": 66,
+        "h": 66,
+        "strip": "knob_op3_teal_5way.png",
+        "frames": 5,
+        "bipolar": false
+      },
+      {
+        "param": 61,
+        "id": "vel_sens",
+        "cx": 732,
+        "cy": 246,
+        "w": 66,
+        "h": 66,
+        "strip": "knob_op3_silver.png",
+        "frames": 65,
+        "bipolar": false
+      },
+      {
+        "param": 62,
+        "id": "porta",
+        "cx": 872,
+        "cy": 246,
+        "w": 66,
+        "h": 66,
+        "strip": "knob_op3_silver.png",
+        "frames": 65,
+        "bipolar": false
+      },
+      {
+        "param": 63,
+        "id": "bend_range",
+        "cx": 732,
+        "cy": 486,
+        "w": 66,
+        "h": 66,
+        "strip": "knob_op3_gold_13way.png",
+        "frames": 13,
+        "bipolar": false
+      },
+      {
+        "param": 64,
+        "id": "lfo_wave",
+        "cx": 872,
+        "cy": 486,
+        "w": 66,
+        "h": 66,
+        "strip": "knob_op3_gold_4way.png",
+        "frames": 4,
+        "bipolar": false
+      },
+      {
+        "param": 65,
+        "id": "delay_div",
+        "cx": 1028,
+        "cy": 246,
+        "w": 66,
+        "h": 66,
+        "strip": "knob_op3_gold_6way.png",
+        "frames": 6,
+        "bipolar": false
+      },
+      {
+        "param": 66,
+        "id": "delay_fb",
+        "cx": 1172,
+        "cy": 246,
+        "w": 66,
+        "h": 66,
+        "strip": "knob_op3_silver.png",
+        "frames": 65,
+        "bipolar": false
+      },
+      {
+        "param": 56,
+        "id": "opm_noise",
+        "cx": 110,
+        "cy": 468,
+        "w": 44,
+        "h": 132,
+        "strip": "fader_op3_gold.png",
+        "frames": 65,
+        "bipolar": false
+      },
+      {
+        "param": 58,
+        "id": "dac_grit",
+        "cx": 404,
+        "cy": 468,
+        "w": 44,
+        "h": 132,
+        "strip": "fader_op3_red.png",
+        "frames": 65,
+        "bipolar": false
+      },
+      {
+        "param": 60,
+        "id": "psg_decay",
+        "cx": 569,
+        "cy": 468,
+        "w": 44,
+        "h": 132,
+        "strip": "fader_op3_teal.png",
+        "frames": 65,
+        "bipolar": false
+      },
+      {
+        "param": 67,
+        "id": "delay_tone",
+        "cx": 1028,
+        "cy": 468,
+        "w": 44,
+        "h": 132,
+        "strip": "fader_op3_cream.png",
+        "frames": 65,
+        "bipolar": false
+      },
+      {
+        "param": 0,
+        "id": "volume",
+        "cx": 1172,
+        "cy": 468,
+        "w": 52,
+        "h": 138,
+        "strip": "fader_op3_master.png",
+        "frames": 65,
+        "bipolar": false
+      }
+    ],
+    "strips": [],
+    "labels": [
+      {
+        "param": 70,
+        "id": "stat_info_p3",
+        "x": 914,
+        "y": 26,
+        "w": 304,
+        "h": 46,
+        "size": 18,
+        "color": "ff5cf2cc"
+      }
+    ]
+  },
+  "page4": {
+    "knobs": [
+      {
+        "param": 73,
+        "id": "filt_cut",
+        "cx": 109,
+        "cy": 258,
+        "w": 76,
+        "h": 76,
+        "strip": "knob_op3_red_hero.png",
+        "frames": 65,
+        "bipolar": false
+      },
+      {
+        "param": 74,
+        "id": "filt_res",
+        "cx": 257,
+        "cy": 258,
+        "w": 66,
+        "h": 66,
+        "strip": "knob_op3_gold_pot.png",
+        "frames": 65,
+        "bipolar": false
+      },
+      {
+        "param": 72,
+        "id": "filt_mode",
+        "cx": 109,
+        "cy": 492,
+        "w": 66,
+        "h": 66,
+        "strip": "knob_op3_gold_4way.png",
+        "frames": 4,
+        "bipolar": false
+      },
+      {
+        "param": 78,
+        "id": "filt_env_amt",
+        "cx": 416,
+        "cy": 258,
+        "w": 66,
+        "h": 66,
+        "strip": "knob_op3_silver.png",
+        "frames": 65,
+        "bipolar": true
+      },
+      {
+        "param": 79,
+        "id": "filt_vel",
+        "cx": 565,
+        "cy": 258,
+        "w": 66,
+        "h": 66,
+        "strip": "knob_op3_silver.png",
+        "frames": 65,
+        "bipolar": false
+      },
+      {
+        "param": 77,
+        "id": "filt_key",
+        "cx": 714,
+        "cy": 258,
+        "w": 66,
+        "h": 66,
+        "strip": "knob_op3_silver.png",
+        "frames": 65,
+        "bipolar": false
+      },
+      {
+        "param": 76,
+        "id": "filt_drive",
+        "cx": 863,
+        "cy": 258,
+        "w": 66,
+        "h": 66,
+        "strip": "knob_op3_gold_pot.png",
+        "frames": 65,
+        "bipolar": false
+      },
+      {
+        "param": 84,
+        "id": "filt_lfo",
+        "cx": 1023,
+        "cy": 258,
+        "w": 66,
+        "h": 66,
+        "strip": "knob_op3_teal_pot.png",
+        "frames": 65,
+        "bipolar": false
+      },
+      {
+        "param": 10,
+        "id": "lfo_speed",
+        "cx": 1171,
+        "cy": 258,
+        "w": 66,
+        "h": 66,
+        "strip": "knob_op3_silver.png",
+        "frames": 65,
+        "bipolar": false
+      },
+      {
+        "param": 75,
+        "id": "filt_hpf",
+        "cx": 257,
+        "cy": 472,
+        "w": 44,
+        "h": 132,
+        "strip": "fader_op3_teal.png",
+        "frames": 65,
+        "bipolar": false
+      },
+      {
+        "param": 80,
+        "id": "filt_att",
+        "cx": 416,
+        "cy": 472,
+        "w": 44,
+        "h": 132,
+        "strip": "fader_op3_red.png",
+        "frames": 65,
+        "bipolar": false
+      },
+      {
+        "param": 81,
+        "id": "filt_dec",
+        "cx": 565,
+        "cy": 472,
+        "w": 44,
+        "h": 132,
+        "strip": "fader_op3_gold.png",
+        "frames": 65,
+        "bipolar": false
+      },
+      {
+        "param": 82,
+        "id": "filt_sus",
+        "cx": 714,
+        "cy": 472,
+        "w": 44,
+        "h": 132,
+        "strip": "fader_op3_cream.png",
+        "frames": 65,
+        "bipolar": false
+      },
+      {
+        "param": 83,
+        "id": "filt_rel",
+        "cx": 863,
+        "cy": 472,
+        "w": 44,
+        "h": 132,
+        "strip": "fader_op3_teal.png",
+        "frames": 65,
+        "bipolar": false
+      },
+      {
+        "param": 5,
+        "id": "fm_bite",
+        "cx": 1023,
+        "cy": 472,
+        "w": 44,
+        "h": 132,
+        "strip": "fader_op3_gold.png",
+        "frames": 65,
+        "bipolar": true
+      },
+      {
+        "param": 0,
+        "id": "volume",
+        "cx": 1171,
+        "cy": 472,
+        "w": 52,
+        "h": 138,
+        "strip": "fader_op3_master.png",
+        "frames": 65,
+        "bipolar": false
+      }
+    ],
+    "strips": [
+      {
+        "param": 72,
+        "id": "filt_crt",
+        "cx": 620,
+        "cy": 67,
+        "w": 476,
+        "h": 90,
+        "strip": "filt_crt_4.png",
+        "frames": 4
+      },
+      {
+        "param": 68,
+        "id": "meter_l_p4",
+        "cx": 1158,
+        "cy": 60,
+        "w": 22,
+        "h": 70,
+        "strip": "meter_vfd_8.png",
+        "frames": 8
+      },
+      {
+        "param": 69,
+        "id": "meter_r_p4",
+        "cx": 1188,
+        "cy": 60,
+        "w": 22,
+        "h": 70,
+        "strip": "meter_vfd_8.png",
+        "frames": 8
+      }
+    ],
+    "labels": [
+      {
+        "param": 70,
+        "id": "stat_info_p4",
+        "x": 52,
+        "y": 80,
+        "w": 296,
+        "h": 33,
+        "size": 17,
+        "color": "ff5cf2cc"
+      },
+      {
+        "param": 85,
+        "id": "stat_filt_p4",
+        "x": 894,
+        "y": 50,
+        "w": 230,
+        "h": 44,
+        "size": 18,
+        "color": "fffcc244"
+      }
+    ]
+  }
+}
