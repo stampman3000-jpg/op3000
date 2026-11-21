@@ -1,5 +1,9 @@
 # OP3000 — Dual-Chip FM Arcade Synthesizer for Akai MPC
 
+[![MPC Plugins](https://mpcplugins.github.io/badge/op3000.svg)](https://thediskking.com/plugins/op3000/)
+
+![OP3000](screenshots/op3000.png)
+
 **OP3000** (`UID: OPAR`, vendor `Stampman3000`) is a standalone dual-chip 4-operator FM arcade synthesizer for Akai MPC OS 3.10.1+ (32-bit ARM32 Cortex-A17 & 64-bit ARM64), pairing **Yamaha YM2151 (OPM)** and **Yamaha YM2612 (OPN2)** style FM synthesis cores with an **SN76489-style PSG sub-chip**, per-voice hybrid analog filter, Mega Drive Model 1 warm filter stage, 1980s stereo BBD chorus, and tempo-synced ping-pong stereo delay.
 
 Licensed under the **MIT License** — see [LICENSE](LICENSE) and [NOTICE.md](NOTICE.md).
