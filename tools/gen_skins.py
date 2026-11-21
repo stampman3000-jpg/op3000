@@ -267,7 +267,7 @@ def main():
                         [1, 2, 3, 4],     # Chip, Alg, Feedback, Voice
                         [5, 6, 7, 8],     # FM Bite, Attack, Decay, Release
                         [9, 10, 11, 12],  # Detune, LFO Speed, Vib, Trem
-                        [13, 14, 15, 16], # PSG Sub, PCB Tone, Chorus, Delay
+                        [13, 14, 15, 16], # PSG Sub, PCB Tone, Chorus, Delay Send
                     ]),
                 },
                 {
@@ -294,7 +294,7 @@ def main():
                         [53, 54, 55, 58], # Blend, OPN2 Oct, Det, DAC Grit
                         [56, 57, 59, 60], # OPM Noise, SSG-EG, PSG Wave, Decay
                         [61, 62, 63, 64], # Vel, Glide, Bend, LFO Wave
-                        [65, 66, 67, 0],  # Dly Time, Fbk, Tone, Volume
+                        [65, 66, 16, 0],  # Dly Time, Fbk, Send, Volume
                     ]),
                 },
                 {
@@ -303,7 +303,7 @@ def main():
                         [49, 50, 51, 52], # OP1..4 AM Enable
                         [10, 64, 11, 12], # LFO Speed, Wave, Vib, Trem
                         [2, 3, 5, 9],     # Algorithm, Feedback, FM Bite, Detune
-                        [1, 53, 13, 0],   # Chip Mode, Blend, PSG Sub, Volume
+                        [67, 53, 13, 0],  # Dly Tone, Blend, PSG Sub, Volume
                     ]),
                 },
                 {
@@ -329,7 +329,7 @@ def main():
             "Q-Link 9": 13,  # PSG Sub
             "Q-Link 10": 14, # PCB Tone
             "Q-Link 11": 15, # Chorus
-            "Q-Link 12": 16, # Delay Mix
+            "Q-Link 12": 16, # Delay Send
             "Q-Link 13": 10, # LFO Speed
             "Q-Link 14": 11, # Vib / PM
             "Q-Link 15": 53, # Chip Blend

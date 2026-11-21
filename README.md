@@ -40,6 +40,6 @@ Licensed under the **MIT License** — see [LICENSE](LICENSE) and [NOTICE.md](NO
 bash tools/build_all.sh
 bash tools/run_tests.sh
 ```
-Deployable archive: `dist/op3000-1.0.0-mpc.zip` (extract `"Stampman3000 - VST - OP3000"` into `VST2 Plugins/` on your MPC drive).
+Deployable archive: `dist/op3000-1.0.1-mpc.zip` (extract `"Stampman3000 - VST - OP3000"` into `VST2 Plugins/` on your MPC drive).
 
 ☕ If this saves you time, you can [buy me a coffee](https://paypal.me/johnnybarter1).

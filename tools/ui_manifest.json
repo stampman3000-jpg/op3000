@@ -770,13 +770,13 @@
         "bipolar": false
       },
       {
-        "param": 67,
-        "id": "delay_tone",
+        "param": 16,
+        "id": "delay_send_p3",
         "cx": 1028,
         "cy": 468,
         "w": 44,
         "h": 132,
-        "strip": "fader_op3_cream.png",
+        "strip": "fader_op3_red.png",
         "frames": 65,
         "bipolar": false
       },

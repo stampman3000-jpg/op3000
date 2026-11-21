@@ -225,6 +225,47 @@ int main()
                "Per-voice Filter ADSR sweeps cutoff down", msg);
     }
 
+    // 8. True Pre-Delay Send rings out echo tails when pulled to 0%
+    {
+        OpArcadeEngine eng;
+        eng.prepare (sr);
+        SynthParams p;
+        p.chipMode = 0; p.alg = 0; p.feedback = 0; p.detune = 0.0f;
+        p.lfoPm = 0.0f; p.lfoAm = 0.0f; p.chorusMix = 0.0f; p.psgMix = 0.0f;
+        p.op[0].level = 0; p.op[1].level = 0; p.op[2].level = 0;
+        p.op[3] = { 1, 0, 0, 96, 31, 0, 0, 0, 15, 0 };
+        p.delayMix = 0.85f;
+        p.delayDiv = 0; // 1/16 at 120 BPM = 5512 samples
+        p.delayFb  = 0.55f;
+        p.delayTone = 0.75f;
+
+        eng.noteOn (69, 1.0f, p);
+        std::vector<float> tmpL (128), tmpR (128);
+        for (int pos = 0; pos < 1536; pos += 128)
+            eng.render (tmpL.data(), tmpR.data(), 128, p, 120.0);
+        eng.noteOff (69);
+        for (int pos = 0; pos < 2560; pos += 128)
+            eng.render (tmpL.data(), tmpR.data(), 128, p, 120.0);
+
+        // Pull Send to 0% before the first echo arrives
+        p.delayMix = 0.0f;
+        const int tailN = 66048;
+        std::vector<float> L (tailN), R (tailN);
+        for (int pos = 0; pos < tailN; pos += 128)
+            eng.render (L.data() + pos, R.data() + pos, 128, p, 120.0);
+
+        auto rangeRms = [] (const std::vector<float>& x, int a, int b) {
+            double s = 0.0;
+            for (int i = a; i < b; ++i) s += (double) x[(size_t) i] * x[(size_t) i];
+            return std::sqrt (s / (double) std::max (1, b - a));
+        };
+        const double earlyEchoRms = std::max (rangeRms (L, 1000, 18000), rangeRms (R, 1000, 18000));
+        const double lateTailRms  = std::max (rangeRms (L, 58000, tailN), rangeRms (R, 58000, tailN));
+        std::snprintf (msg, sizeof (msg), "earlyEcho=%.4f -> lateTail=%.5f", earlyEchoRms, lateTailRms);
+        check (earlyEchoRms > 0.03 && lateTailRms < earlyEchoRms * 0.20 && allFinite (L) && allFinite (R),
+               "True Pre-Delay Send rings out echo tails at 0%", msg);
+    }
+
     std::printf ("\nSummary: %d passed, %d failed\n", gPass, gFail);
     return gFail == 0 ? 0 : 1;
 }

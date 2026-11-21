@@ -112,7 +112,7 @@ public:
         info.name         = "OP3000";
         info.vendor       = "Stampman3000";
         info.uniqueId     = MPC_FOURCC ('O', 'P', 'A', 'R');
-        info.version      = 1000;
+        info.version      = 1001;
         info.isInstrument = true;
         info.numInputs    = 0;
         info.numOutputs   = 2;
@@ -396,7 +396,7 @@ private:
         addParam (floatParam  ("psg_mix",    "PSG Sub",     0.0f, 100.0f, 0.0f,  "%", 0));
         addParam (choiceParam ("pcb_tone",   "PCB Tone",    { "Crisp", "MD1 Warm", "Lo-Fi" }, 0));
         addParam (floatParam  ("chorus_mix", "Chorus",      0.0f, 100.0f, 38.0f, "%", 0));
-        addParam (floatParam  ("delay_mix",  "Delay Mix",   0.0f, 100.0f, 22.0f, "%", 0));
+        addParam (floatParam  ("delay_mix",  "Delay Send",  0.0f, 100.0f, 22.0f, "%", 0));
 
         // 17..48: Page 2 OPS (4 ops * 8 params)
         const std::vector<std::string> mulNames = { "0.5", "1", "2", "3", "4", "5", "6", "7", "8", "9", "10", "11", "12", "13", "14", "15" };

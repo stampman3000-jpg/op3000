@@ -2,7 +2,7 @@
   "name": "OP3000",
   "manufacturer": "Stampman3000",
   "uid": "OPAR",
-  "version": "1.0.0",
+  "version": "1.0.1",
   "kind": "instrument",
   "category": "Synth",
   "numInputs": 0,

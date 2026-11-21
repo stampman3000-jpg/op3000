@@ -44,7 +44,7 @@ def main():
         "chip_blend": 0.5, "opn2_oct": 0.5, "opn2_det": 0.61, "opm_noise": 0.0,
         "ssg_eg": 0.0, "dac_grit": 0.0, "psg_wave": 0.25, "psg_decay": 0.35,
         "vel_sens": 0.55, "porta": 0.0, "bend_range": 2/12, "lfo_wave": 2/3,
-        "delay_div": 3/5, "delay_fb": 0.4, "delay_tone": 0.65, "volume": 0.80,
+        "delay_div": 3/5, "delay_fb": 0.4, "delay_tone": 0.65, "delay_send_p3": 0.24, "volume": 0.80,
         "filt_mode": 1/3, "filt_cut": 0.68, "filt_res": 0.42, "filt_hpf": 0.18,
         "filt_drive": 0.25, "filt_key": 0.50, "filt_env_amt": 0.72, "filt_vel": 0.45,
         "filt_att": 0.08, "filt_dec": 0.38, "filt_sus": 0.35, "filt_rel": 0.35,

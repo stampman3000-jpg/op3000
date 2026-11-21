@@ -353,7 +353,7 @@ public:
     void reset()
     {
         chL_.fill (0.0f); chR_.fill (0.0f); chPos_ = 0; chPh_ = 0.0f;
-        dlyL_.fill (0.0f); dlyR_.fill (0.0f); dlyPos_ = 0;
+        dlyL_.fill (0.0f); dlyR_.fill (0.0f); dlyPos_ = 0; dlyTail_ = 0;
         dlyLpL_ = dlyLpR_ = 0.0f;
         md1L1_ = md1L2_ = md1R1_ = md1R2_ = 0.0f;
         dcX1L_ = dcY1L_ = dcX1R_ = dcY1R_ = 0.0f;
@@ -371,7 +371,6 @@ public:
         const float invGLev  = 1.0f / gLevels;
         const bool  doMd1    = (pcbTone == 1);
         const bool  doChorus = chorusMix > 0.005f;
-        const bool  doDelay  = delayMix > 0.005f;
 
         static constexpr float kDivBeats[6] = { 0.25f, 1.0f/3.0f, 0.5f, 0.75f, 1.0f, 2.0f };
         const float beats = kDivBeats[clampi (delayDiv, 0, 5)];
@@ -379,6 +378,11 @@ public:
         const int   dSmp  = clampi ((int) (sec * sr_), 64, kDlyMax - 2);
         const float lpC   = 0.06f + 0.75f * clampf (delayTone, 0.0f, 1.0f);
         const float fb    = clampf (delayFb, 0.0f, 0.88f);
+        const float send  = clampf (delayMix, 0.0f, 1.0f);
+        if (send > 0.002f)
+            dlyTail_ = std::max (dlyTail_, dSmp + 2048);
+        const bool  doDelay = (send > 0.002f || dlyTail_ > 0);
+        float       dlyPeak = 0.0f;
         const float ms    = sr_ * 0.001f;
         const float chInc = 0.68f / sr_;
 
@@ -432,10 +436,18 @@ public:
                 const float tapR = dlyR_[(size_t) rPos];
                 dlyLpL_ += (tapL - dlyLpL_) * lpC;
                 dlyLpR_ += (tapR - dlyLpR_) * lpC;
-                dlyL_[(size_t) dlyPos_] = l + dlyLpR_ * fb;
-                dlyR_[(size_t) dlyPos_] = r + dlyLpL_ * fb;
-                l += dlyLpL_ * delayMix * 0.75f;
-                r += dlyLpR_ * delayMix * 0.75f;
+                if (std::fabs (dlyLpL_) < 1e-24f) dlyLpL_ = 0.0f;
+                if (std::fabs (dlyLpR_) < 1e-24f) dlyLpR_ = 0.0f;
+                const float wL = l * send + dlyLpR_ * fb;
+                const float wR = r * send + dlyLpL_ * fb;
+                dlyL_[(size_t) dlyPos_] = wL;
+                dlyR_[(size_t) dlyPos_] = wR;
+                const float aL = std::fabs (dlyLpL_) + std::fabs (wL);
+                const float aR = std::fabs (dlyLpR_) + std::fabs (wR);
+                if (aL > dlyPeak) dlyPeak = aL;
+                if (aR > dlyPeak) dlyPeak = aR;
+                l += dlyLpL_ * 0.75f;
+                r += dlyLpR_ * 0.75f;
             }
             else
             {
@@ -453,6 +465,21 @@ public:
 
             bufL[i] = l;
             bufR[i] = r;
+        }
+
+        if (doDelay && send <= 0.002f)
+        {
+            if (dlyPeak > 1e-5f)
+                dlyTail_ = std::max (dlyTail_, dSmp + 2048);
+            else
+            {
+                dlyTail_ = std::max (0, dlyTail_ - n);
+                if (dlyTail_ == 0)
+                {
+                    dlyLpL_ = 0.0f;
+                    dlyLpR_ = 0.0f;
+                }
+            }
         }
     }
 
@@ -472,7 +499,7 @@ private:
     int   chPos_ = 0;
     float chPh_ = 0.0f;
     std::array<float, kDlyMax> dlyL_ {}, dlyR_ {};
-    int   dlyPos_ = 0;
+    int   dlyPos_ = 0, dlyTail_ = 0;
     float dlyLpL_ = 0.0f, dlyLpR_ = 0.0f;
     float md1L1_ = 0.0f, md1L2_ = 0.0f, md1R1_ = 0.0f, md1R2_ = 0.0f;
     float dcX1L_ = 0.0f, dcY1L_ = 0.0f, dcX1R_ = 0.0f, dcY1R_ = 0.0f;

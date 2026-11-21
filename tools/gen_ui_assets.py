@@ -444,7 +444,7 @@ def build_page1():
         (9,  "detune",     863,  y_bot_f, 44, 132, "fader_op3_teal.png",  65, "DETUNE",    "WIDE", "0",    False, ARC_TEAL),
 
         (15, "chorus_mix", 1023, y_bot_f, 44, 132, "fader_op3_teal.png",  65, "CHORUS",    "10",   "0",    False, ARC_TEAL),
-        (16, "delay_mix",  1171, y_bot_f, 44, 132, "fader_op3_red.png",   65, "DELAY MIX", "10",   "0",    False, ARC_RED_HI),
+        (16, "delay_mix",  1171, y_bot_f, 44, 132, "fader_op3_red.png",   65, "DELAY SEND", "10",   "0",    False, ARC_RED_HI),
     ]
 
     knobs = []
@@ -601,7 +601,7 @@ def build_page3():
         (56, "opm_noise",  110,  y_bot_f, 44, 132, "fader_op3_gold.png",   65, "OPM NOISE",  "31",   "OFF", False, ARC_GOLD),
         (58, "dac_grit",   404,  y_bot_f, 44, 132, "fader_op3_red.png",    65, "DAC GRIT",   "GRIT", "CLN", False, ARC_RED_HI),
         (60, "psg_decay",  569,  y_bot_f, 44, 132, "fader_op3_teal.png",   65, "PSG DECAY",  "HOLD", "PERC", False, ARC_TEAL),
-        (67, "delay_tone", 1028, y_bot_f, 44, 132, "fader_op3_cream.png",  65, "DLY TONE",   "BRT",  "DARK", False, CREAM),
+        (16, "delay_send_p3", 1028, y_bot_f, 44, 132, "fader_op3_red.png", 65, "DLY SEND",   "10",   "0",    False, ARC_RED_HI),
         (0,  "volume",     1172, y_bot_f, 52, 138, "fader_op3_master.png", 65, "MASTER VOL", "MAX",  "0",    False, ARC_RED_HI),
     ]
 
